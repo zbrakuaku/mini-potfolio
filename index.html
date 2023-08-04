@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>My portfolio</title>
+  </head>
+  <body class="floating-gradient">
+    <aside>
+      <figure>
+        <div id="avatar" class="myavatar"></div>
+        <figcaption>Amelia Klar</figcaption>
+      </figure>
+      <img src="/image/menu.svg" />
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About me</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <main>
+      <h1>Hi there!</h1>
+      <p>
+        I see you're a developer, so I have a question for you.Would you like to
+        write code with me that can transform my life? Because from the moment I
+        first looked into your expectations, I knew you were like the perfect
+        function for me, ready to be called at any time. UwU
+      </p>
+
+      <a href="#" class="cta">My portfolio</a>
+    </main>
+    <script>
+      (function () {
+        const menu = document.querySelector("ul"),
+          menulink = document.querySelector("img");
+
+        menulink.addEventListener("click", function (e) {
+          menu.classList.toggle("active");
+          e.preventDefault();
+        });
+      })();
+    </script>
+  </body>
+</html>
